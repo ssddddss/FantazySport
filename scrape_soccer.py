@@ -9,7 +9,7 @@ RE_REMOVE_HTML = re.compile('<.+?>')
 SLEEP_SECONDS = 1
 
 fields = ['name', 'pos', 'MP', 'Pri', 'GS', 'Ass', 'CS', 'GC',
-    'PM', 'PE', 'PC', 'PS', 'YC', 'RC', 'Sav', 'RB', 'MDP', 'PTS']
+    'PM', 'PE', 'PC', 'PS', 'YC', 'RC', 'Sav', 'RB', 'MDP', 'PTS', 'team']
 
 
 XPATH_MAP = {
@@ -31,6 +31,7 @@ XPATH_MAP = {
     'RB': "td[17]",
     'MDP': "td[18]",
     'PTS': "td[19]",
+    'team': "td[2]/span[1]"
 }
 
 "MP: Minutes Played"
