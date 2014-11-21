@@ -59,7 +59,7 @@ def process_stats_row(stat_row):
         
         stats_item[col_name] = RE_REMOVE_HTML.sub('', stat_row.find_element_by_xpath(xpath).get_attribute('innerHTML'))
         stats_item[col_name] = stats_item[col_name].encode('utf-8')
-    #print stats_item
+    
     return stats_item
 
 def process_page(driver, page):
